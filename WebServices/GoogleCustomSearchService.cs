@@ -24,6 +24,12 @@ namespace FinalstreamCommons.WebServices
             _customSearchEngineId = customSearchEngineId;
         }
 
+        /// <summary>
+        /// クエリーを実行します。
+        /// </summary>
+        /// <param name="searchKeyword">キーワード</param>
+        /// <param name="lr">言語</param>
+        /// <returns></returns>
         public GoogleCustomSearchResponse Query(string searchKeyword, string lr = "lang_ja")
         {
             var request = new RestRequest(Method.GET);
@@ -35,7 +41,7 @@ namespace FinalstreamCommons.WebServices
 
             var response = _restClient.Execute<GoogleCustomSearchResponse>(request);
 
-            _log.Info("Google Custom Search Request Url:{0}", response.ResponseUri);
+            _log.Debug("Google Custom Search Request Url:{0}", response.ResponseUri);
             _log.Debug("Google Custom Search Request Url:{0} Response:{1}", response.ResponseUri, response.Content);
             return response.Data;
         }
