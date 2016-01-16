@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>FinalstreamCommons.Web</id>
+        <version>$version$</version>
+        <title>FinalstreamCommons.Web</title>
+        <authors>Finalstream</authors>
+        <owners>Finalstream</owners>
+        <licenseUrl>https://github.com/finalstream/FinalstreamCommons.Web/blob/master/LICENSE</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Application Development Support WebService Library.</description>
+        <copyright>Copyright ©  2016 Finalstream</copyright>
+        <projectUrl>https://github.com/finalstream/FinalstreamCommons.Web</projectUrl>
+        <language />
+        <dependencies>
+        </dependencies>
+        <tags>WebLibrary</tags>
+    </metadata>
+    <files />
+</package>
